@@ -63,7 +63,7 @@ public class AppDriver {
 				int yearFilm, totalDuration;
 				System.out.print("Enter in year: ");
 				yearFilm = inputNumber.nextInt();
-				System.out.println("Movie List");
+				System.out.println("\nMovie List");
 				System.out.printf("%-12s %-6s %-30s\n", "Duration", "Year", "Title");
 				totalDuration = movieManagement.generateMovieListInYear(movieList, yearFilm);
 				System.out.println("Total duration: " + totalDuration + " minutes\n");
@@ -73,9 +73,8 @@ public class AppDriver {
 				int numberRandom;
 				System.out.print("Enter number of movies: ");
 				numberRandom = inputNumber.nextInt();
-				System.out.println();
-				System.out.println("Movie List");
-				System.out.printf("%13s %7s %20s\n", "Duration", "Year", "Title");
+				System.out.println("\nMovie List");
+				System.out.printf("%-12s %-6s %-30s\n", "Duration", "Year", "Title");
 				totalDuration = movieManagement.generateRandomMovieList(movieList, numberRandom);
 				System.out.println("Total duration: " + totalDuration + " minutes\n");
 				break;
