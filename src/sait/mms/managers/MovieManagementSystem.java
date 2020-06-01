@@ -30,8 +30,9 @@ public class MovieManagementSystem {
 	private ArrayList<Movie> movies;
 
 	/**
-	 *  This constructor create a new Scanner keyboard and new Arraylist movie
-	 *  After that, it call method loadMovieList()
+	 * This constructor create a new Scanner keyboard and new Arraylist movie After
+	 * that, it call method loadMovieList()
+	 * 
 	 * @throws FileNotFoundException
 	 */
 	public MovieManagementSystem() throws FileNotFoundException {
@@ -41,7 +42,9 @@ public class MovieManagementSystem {
 	}
 
 	/**
-	 * This method read the text file and add the movie and its content into arraylist movies
+	 * This method read the text file and add the movie and its content into
+	 * arraylist movies
+	 * 
 	 * @throws FileNotFoundException
 	 */
 	private void loadMovieList() throws FileNotFoundException {
@@ -98,6 +101,7 @@ public class MovieManagementSystem {
 
 	/**
 	 * This method for user to add a movie into arrayList
+	 * 
 	 * @throws IOException
 	 */
 	public void addMovie() throws IOException {
@@ -147,7 +151,8 @@ public class MovieManagementSystem {
 	}
 
 	/**
-	 * This method for user input number of movies, and display the number of random movie
+	 * This method for user input number of movies, and display the number of random
+	 * movie
 	 */
 	public void generateRandomMovieList() {
 		int totalDuration = 0;
@@ -166,6 +171,7 @@ public class MovieManagementSystem {
 
 	/**
 	 * This method to saves change from arrayList movies into text file
+	 * 
 	 * @throws IOException
 	 */
 	public void saveChanges() throws IOException {
@@ -176,8 +182,10 @@ public class MovieManagementSystem {
 			outputFile.println(movies.get(i).formatToFile());
 		}
 		outputFile.close();
+
 		System.out.println("Saving movies list...");
 		System.out.println("Have a good night!");
+
 	}
 
 }

@@ -16,6 +16,7 @@ public class AppDriver {
 	public static void main(String[] args) throws IOException {
 		MovieManagementSystem movieManagement = new MovieManagementSystem();
 		movieManagement.displayMenu();
+		
 	}
 	
 }
